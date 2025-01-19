@@ -1,0 +1,93 @@
+body {
+  font-family: Roboto;
+  text-decoration: none;
+}
+
+main {
+  padding-top: 60px;
+}
+
+.sidebar {
+  width: 60px;
+  align-content: center;
+
+}
+
+.sidebar-link {
+  font-size: 10px;
+  width: 24px;
+}
+
+.side-icon {
+  width: 24px;
+  border-radius: 12px;
+}
+
+.hamburger-menu {
+  width: 24px;
+  margin-left: 10px;
+}
+
+.youtube-logo {
+  margin-left: 35px;
+  width: 90px;
+  height: 20px;
+}
+
+.icon {
+  width: 24px;
+}
+
+.video-info-grid {
+  display: grid;
+  grid-template-columns: 50px 1fr;
+}
+
+.video-card {
+  width: 300px;
+}
+
+
+.video-preview {
+  width: 300px;
+  vertical-align: top;
+
+}
+
+.video-info {
+  background-color: blue;
+  color: antiquewhite;
+  width: 200px;
+}
+
+p.video-title {
+  width: 247.75px;
+  height: 40px;
+  margin: 8px 0px 0px;
+}
+
+a.video-link {
+  height: 36px;
+}
+
+
+.channel-profile-pic {
+  width: 50px;
+  border-radius: 25px;
+  vertical-align: top;
+}
+
+a.video-link {
+  width: 230.36px;
+  height: 36px;
+}
+
+a.channel-link {
+  width: 99.5px;
+  height: 14px;
+}
+
+p.video-stats {
+  height: 14px;
+  margin: 4px 0px 12px;
+}
