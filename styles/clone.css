@@ -12,10 +12,6 @@
   
 }
 
-.video-preview {
-
-}
-
 .thumbnail {
   width: 100%;
 
@@ -23,7 +19,7 @@
 
 .video-title {
   font-size: 14px;
-  color: 000000;
+  color: whitesmoke;
   margin-bottom: 12px;
 }
 
@@ -39,18 +35,16 @@
   margin: 4px 0px 12px;
 }
 
-.video-info {}
 
 .video-info-grid {
   display: grid;
   grid-template-columns: 50px 1fr;
 }
 
-.channel-picture {}
 
 .profile-picture {
-  width: 40px;
-  border-radius: 20px;
+  width: 34px;
+  border-radius: 17px;
 }
 
 .thumbnail-row {

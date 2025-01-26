@@ -1,0 +1,93 @@
+.footer-main {
+  width: 100%;
+  padding: 60px 0 100px;
+  color: whitesmoke;
+  text-decoration: none;
+  z-index: 100;
+}
+
+.footer-main-flex {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.footer-testimony {
+  flex-basis: 20%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+}
+
+.footer-testimony img {
+  width: 30%;
+  border-radius: 100px;
+  background-color: #fff;
+
+}
+
+.footer-testimony p {
+  text-align: center;
+  font-size: 16;
+  padding: 20px 20px 0px;
+}
+
+.footer-getintouch {
+  padding: 10px 20px;
+  margin: 40px 0 60px;
+  border: 1px solid white;
+  font-weight: 600;
+  background-color: peru;
+  cursor: pointer;
+}
+
+.footer-getintouch:hover {
+  background-color: palevioletred;
+}
+
+.footer-sitemap {
+  flex-basis: 100%;
+  display: flex;
+}
+
+.footer-sitemap a {
+  line-height: 30px;
+  cursor: pointer;
+}
+
+.footer-sitemap a:hover {
+  opacity: 0.8;
+}
+
+.footer-sitemap ul:nth-child(1) {
+  border-left: 3px solid peru;
+  padding-left: 20px;
+}
+
+.footer-sitemap ul:nth-child(1),
+.footer-sitemap ul:nth-child(2) {
+  flex-basis: 180px;
+}
+
+.footer-sitemap ul:nth-child(3) {
+  flex-basis: 340px;
+}
+
+.footer-sitemap p {
+  text-transform: uppercase;
+}
+
+.footer-sitemap ul:nth-child(4) {
+  flex-grow: 1;
+}
+
+.footer-sitemap ul:nth-child(4) p {
+  clear: both;
+  float: right;
+}
+
+.burger-menu,
+.burger-menu-btn {
+  display: none;
+}

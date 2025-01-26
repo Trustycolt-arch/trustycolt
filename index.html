@@ -8,45 +8,96 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet">
+  <link rel="stylesheet" href="styles/reset.css">
   <link rel="stylesheet" href="styles/general.css">
-  <link rel="stylesheet" href="styles/clone.css ">
   <link rel="stylesheet" href="styles/header.css">
+  <link rel="stylesheet" href="styles/video.css">
+  <link rel="stylesheet" href="styles/sidebar.css">
+  <link rel="stylesheet" href="styles/footer.css">
   <title>youTubeClone</title>
 </head>
 
 <body>
   <header class="header">
     <div class="left-section">
-      <img class="hamburger-menu" src="images/icons/hamburger-menu.svg" alt="">
-      <img class="youtube-logo" src="images/icons/youtube-logo.svg" alt="">
+      <img class="hamburger-menu" src="images/icons/hamburger-white.png" alt="">
+      <a href="videopage.html"><img class="youtube-logo" src="images/icons/youtube-logo.svg" alt=""></a>
     </div>
 
     <div class="middle-section">
+
+      <!-- Put position absolute inside a postion relative when creating tool tips-->
+
       <input class="search-bar" type="text" placeholder="Search">
-      <button class="search-button tooltip-container">
-        <img class="search-icon" src="images/icons/search.svg">
+      <button type="submit" class="search-button tooltip-container">
+        <img class="search-icon" src="images/icons/search.svg" alt="">
         <div class="tooltip">Search</div>
       </button>
-      <button class="voice-search tooltip-container">
-        <img class="voice-search-icon" src="images/icons/voice-search-icon.svg">
+      <button type="submit" class="voice-search tooltip-container voice-search-button">
+        <img class="voice-search-icon" src="images/icons/voice-search-icon-white.png" alt="">
         <div class="tooltip">Search with your voice</div>
       </button>
     </div>
 
     <div class="right-section">
-      <img class="upload-icon" src="images/side-bar/upload.svg" alt="">
-      <img class="youtube-apps-icon" src="images/icons/youtube-apps.svg" alt="">
-      <img class="notifications-icon" src="images/side-bar/notifications.svg" alt="">
+
+      <div class="upload-icon-container tooltip-container">
+        <img class="notifications-icon tooltip-container" src="images/icons/icons8-video-camera-32.png" alt="">
+        <div class="tooltip">upload</div>
+      </div>
+
+      <div class="upload-icon-container">
+        <button class="create-button">+ create</button>
+        <div class="tooltip">create</div>
+      </div>
+
+
+      <div class="notifications-icon-container tooltip-container">
+        <img class="notifications-icon tooltip-container" src="images/side-bar/notifications-white.png" alt="">
+        <div class="notifications-count">3</div>
+      </div>
       <img class="current-user-picture" src="images/channel-profile-pics/paul-user.jpg" alt="">
 
     </div>
   </header>
 
+  <nav class="sidebar">
+    <div class="sidebar-link">
+      <img src="images/side-bar/home.svg" alt="">
+      <div>home</div>
+    </div>
+    <div class="sidebar-link">
+      <img src="images/side-bar/explore.svg" alt="">
+      <div>explore</div>
+    </div>
+    <div class="sidebar-link">
+      <img src="images/side-bar/subscriptions.svg" alt="">
+      <div>subscriptions</div>
+    </div>
+    <div class="sidebar-link">
+      <img src="images/side-bar/originals.svg" alt="">
+      <div>Originals</div>
+    </div>
+    <div class="sidebar-link">
+      <img src="images/side-bar/youtube-music.svg" alt="">
+      <div>YouTube Music</div>
+    </div>
+    <div class="sidebar-link">
+      <img src="images/side-bar/library.svg" alt="">
+      <div>Library</div>
+    </div>
+    <div class="subscribe">
+      <div class="subscribe-text">Please join our email list</div>
+      <button type="submit" class="subscribe-button">subscribe</button>
+    </div>
+  </nav>
+
   <main>
-    <div class="video-grid-container">
+    <sectiion class="video-grid-container">
       <div class="video-preview">
         <div class="thumbnail-row">
           <img class="thumbnail" src="images/thumbnails/thumbnail-1.webp" alt="">
+          <div class="video-time">14:20</div>
         </div>
         <div class="video-info-grid">
           <div class="channel-picture">
@@ -63,6 +114,7 @@
       <div class="video-preview">
         <div class="thumbnail-row">
           <img class="thumbnail" src="images/thumbnails/thumbnail-2.webp" alt="">
+          <div class="video-time">8:22</div>
         </div>
         <div class="video-info-grid">
           <div class="channel-picture">
@@ -79,6 +131,7 @@
       <div class="video-preview">
         <div class="thumbnail-row">
           <img class="thumbnail" src="images/thumbnails/thumbnail-3.webp" alt="">
+          <div class="video-time">9:13</div>
         </div>
         <div class="video-info-grid">
           <div class="channel-picture">
@@ -95,10 +148,12 @@
       <div class="video-preview">
         <div class="thumbnail-row">
           <img class="thumbnail" src="images/thumbnails/thumbnail-4.webp" alt="">
+          <div class="video-time">22:09</div>
         </div>
         <div class="video-info-grid">
           <div class="channel-picture">
             <img class="profile-picture" src="images/channel-profile-pics/channel-4.jpeg" alt="">
+
           </div>
           <div class="video-info">
             <p class="video-title">The Simplest Math Problem No One Can Solve - Collatz Conjecture</p>
@@ -111,6 +166,7 @@
       <div class="video-preview">
         <div class="thumbnail-row">
           <img class="thumbnail" src="images/thumbnails/thumbnail-5.webp" alt="">
+          <div class="video-time">11:17</div>
         </div>
         <div class="video-info-grid">
           <div class="channel-picture">
@@ -127,15 +183,16 @@
       <div class="video-preview">
         <div class="thumbnail-row">
           <img class="thumbnail" src="images/thumbnails/thumbnail-6.webp" alt="">
+          <div class="video-time">19:59</div>
         </div>
         <div class="video-info-grid">
           <div class="channel-picture">
             <img class="profile-picture" src="images/channel-profile-pics/channel-6.jpeg" alt="">
           </div>
           <div class="video-info">
-            <p class="video-title">Talking Tech and AI with Google CEO Sundar Pichai!</p>
-            <p class="video-author">Marques Brownlee</p>
-            <p class="video-stats">3.4M views · 6 months ago</p>
+            <p class="video-title">Anything You Can Fit In The Circle I’ll Pay For</p>
+            <p class="video-author">MrBeast</p>
+            <p class="video-stats">141M views · 1 year ago</p>
           </div>
         </div>
       </div>
@@ -143,6 +200,7 @@
       <div class="video-preview">
         <div class="thumbnail-row">
           <img class="thumbnail" src="images/thumbnails/thumbnail-7.webp" alt="">
+          <div class="video-time">10:13</div>
         </div>
         <div class="video-info-grid">
           <div class="channel-picture">
@@ -159,6 +217,7 @@
       <div class="video-preview">
         <div class="thumbnail-row">
           <img class="thumbnail" src="images/thumbnails/thumbnail-8.webp" alt="">
+          <div class="video-time">07:12</div>
         </div>
         <div class="video-info-grid">
           <div class="channel-picture">
@@ -175,6 +234,7 @@
       <div class="video-preview">
         <div class="thumbnail-row">
           <img class="thumbnail" src="images/thumbnails/thumbnail-9.webp" alt="">
+          <div class="video-time">13:17</div>
         </div>
         <div class="video-info-grid">
           <div class="channel-picture">
@@ -191,6 +251,7 @@
       <div class="video-preview">
         <div class="thumbnail-row">
           <img class="thumbnail" src="images/thumbnails/thumbnail-10.webp" alt="">
+          <div class="video-time">07:53</div>
         </div>
         <div class="video-info-grid">
           <div class="channel-picture">
@@ -207,6 +268,7 @@
       <div class="video-preview">
         <div class="thumbnail-row">
           <img class="thumbnail" src="images/thumbnails/thumbnail-11.webp" alt="">
+          <div class="video-time">04:10</div>
         </div>
         <div class="video-info-grid">
           <div class="channel-picture">
@@ -223,6 +285,7 @@
       <div class="video-preview">
         <div class="thumbnail-row">
           <img class="thumbnail" src="images/thumbnails/thumbnail-12.webp" alt="">
+          <div class="video-time">04:51</div>
         </div>
         <div class="video-info-grid">
           <div class="channel-picture">
@@ -236,8 +299,70 @@
         </div>
       </div>
 
-    </div>
+    </sectiion>
   </main>
 </body>
+<!--  The FOOTER of our website-->
+
+<footer class="footer-main">
+  <div class="wrapper-main footer-main-flex">
+    <div class="footer-testimony">
+      <img src="images/channel-profile-pics/portrait-small.png" alt="testimonial"><!-- comment -->
+      <p>Paul has been a great <br> influence in my life</p>
+    </div>
+    <div class="footer-testimony">
+      <img src="images/channel-profile-pics/portrait-small.png" alt="testimonial"><!-- comment -->
+      <p>Paul has been a great <br> influence in my life</p>
+    </div>
+    <div class="footer-testimony">
+      <img src="images/channel-profile-pics/portrait-small.png" alt="testimonial"><!-- comment -->
+      <p>Paul has been a great <br> influence in my life</p>
+    </div>
+    <div class="footer-testimony">
+      <img src="images/channel-profile-pics/portrait-small.png" alt="testimonial"><!-- comment -->
+      <p>Paul has been a great <br> influence in my life</p>
+    </div>
+    <div class="footer-testimony">
+      <img src="images/channel-profile-pics/portrait-small.png" alt="testimonial"><!-- comment -->
+      <p>Paul has been a great <br> influence in my life</p>
+    </div>
+    <a class="footer-getintouch" href="#">GET IN TOUCH WITH ME</a>
+
+    <div class="footer-sitemap">
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="videopage.html">VIDEO PAGE</a></li>
+        <li><a href="#">ABOUT US</a></li>
+        <li><a href="#">EXPERIENCE</a></li>
+      </ul>
+      <ul>
+        <li><a href="#">PASTRIES</a></li>
+        <li><a href="#">BAKING</a></li>
+        <li><a href="#">MS EXCEL</a></li>
+        <li><a href="#">PAYROLL</a></li>
+      </ul>
+      <ul>
+        <li>
+          <p>If you want a cake for a special occasion then please get in touch so we can make a custom product for you
+          </p>
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <p>GET IN TOUCH</p>
+        </li>
+        <li>
+          <p>07946 959 132</p>
+        </li>
+        <li>
+          <p>paul.carey7491@gmail.com</p>
+        </li>
+        <li>
+          <p>56 The Pinnaacle Wakefield WF1 1DE</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</footer>
 
 </html>

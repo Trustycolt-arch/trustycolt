@@ -4,12 +4,15 @@
   bottom: 0;
   top: 55px;
   background-color: white;
+  background-color: rgb(66, 62, 62);
+  color: whitesmoke;
   width: 72px;
   z-index: 200;
-  padding-top: 5px;
+  padding-top: 0px;
 }
 
 .sidebar-link {
+  background-color: rgb(66, 62, 62);
   height: 74px;
   display: flex;
   justify-content: center;
@@ -19,7 +22,7 @@
 }
 
 .sidebar-link:hover {
-  background-color: rgb(235, 235, 235);
+  background-color: rgb(44, 39, 39);
 }
 
 .sidebar-link img {
@@ -28,5 +31,48 @@
 }
 
 .sidebar-link div {
+  padding-top: 2px;
   font-size: 10px;
+}
+
+.subscribe {
+  position: relative;
+  padding-top: 0px;
+  font-size: 12px;
+  font-weight: 500;
+  height: 73px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 1px;
+
+}
+
+.subscribe-button:hover {
+  background-color: rgb(44, 39, 39);
+
+}
+
+.subscribe-text {
+  height: 70px;
+  color: red;
+  position: absolute;
+  top: 5;
+
+}
+
+.subscribe-button {
+  background-color: rgb(117, 77, 77);
+  color: whitesmoke;
+  font-size: 12px;
+  cursor: pointer;
+  height: 30px;
+  width: 72;
+  position: absolute;
+  left: 1;
+  right: 2;
+  bottom: 0;
+  cursor: pointer;
+  padding-top: 6px;
 }
